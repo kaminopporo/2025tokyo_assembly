@@ -36,7 +36,7 @@
             padding: 0;
             overflow: hidden;
             font-family: 'Noto Sans JP', sans-serif;
-            background-color: #f0f2f5;
+            background-color: #ffffff;
         }
         /* コンテナ（サイドバーと地図を横並びにする） */
         .container {
@@ -52,32 +52,31 @@
         /* サイドバーのスタイル */
         .sidebar {
             width: 300px;
-            background-color: #ffffff;
+            background-color: #fff2cc;
             padding: 30px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            border-right: 1px solid #e0e0e0;
             overflow-y: auto;
             position: relative;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
         }
         /* スクロールバーのスタイル（WebKitブラウザ向け） */
         .sidebar::-webkit-scrollbar {
             width: 8px;
         }
         .sidebar::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 10px;
+            background: #FFFFFF00;
+            border-radius: 15px;
         }
         .sidebar::-webkit-scrollbar-thumb {
             background: #888;
-            border-radius: 10px;
+            border-radius: 15px;
         }
         .sidebar::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
+
         /* ドラッグハンドルのスタイル (非表示にする) */
         .sidebar-resizer {
             display: none;
@@ -87,8 +86,7 @@
             flex-grow: 1;
             height: 100%;
             width: auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
             overflow: hidden;
         }
         /* サイドバー内の各セクションのスタイル */
@@ -105,8 +103,8 @@
         /* Info button style - 地図の右上に配置 */
         .info-button {
             position: absolute;
-            top: 20px;
-            right: 20px;
+            top: 25px;
+            right: 25px;
             background: none;
             border: none;
             border-radius: 0;
@@ -114,7 +112,7 @@
             height: 30px;
             font-family: 'Material Icons';
             font-size: 20px;
-            color: #555;
+            color: #666;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -127,6 +125,7 @@
             color: #333;
             transform: scale(1.02);
         }
+
         .legend {
             margin-bottom: 30px;
         }
@@ -147,23 +146,21 @@
             color: #4a4a4a;
             padding: 5px 0;
             transition: background-color 0.2s ease;
-            border-radius: 4px;
-            cursor: pointer;
+            border-radius: 15px;
         }
         /* 選択された凡例項目のスタイル */
         .legend-item.selected {
             background-color: #e9e9e9;
             font-weight: 600;
-            color: #222;
+            color: #000000;
         }
         /* カラーシンボルの角を丸くする */
         .legend-color {
             width: 24px;
             height: 24px;
             margin-right: 15px;
-            border: 1px solid #ccc;
             flex-shrink: 0;
-            border-radius: 5px;
+            border-radius: 15px;
         }
         /* 透明度凡例用のスタイル */
         .legend-opacity-tomin { background-color: #6aa84f; }
@@ -214,10 +211,8 @@
         /* 地図情報パネルのスタイル */
         #info-panel {
             background-color: #fdfdfd;
-            border: 1px solid #eee;
-            border-radius: 8px;
+            border-radius: 15px;
             padding: 10px 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             flex-grow: 1;
             overflow-y: auto;
         }
@@ -231,7 +226,7 @@
             font-size: 0.9em;
             margin-bottom: 0px;
             line-height: 1.1;
-            color: #555;
+            color: #666666;
         }
         /* 当選者リストのスタイル */
         #info-panel h3 {
@@ -275,7 +270,7 @@
         .explanation-panel {
             background-color: #ffffff;
             padding: 30px;
-            border-radius: 12px;
+            border-radius: 15px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
             max-width: 600px;
             max-height: 80vh;
@@ -328,8 +323,7 @@
             width: 24px;
             height: 24px;
             margin-right: 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+            border-radius: 15px;
             box-sizing: border-box;
         }
         /* 説明パネル内の日本共産党凡例シンボルに太い黒い枠線を追加 (内側にはみ出す) */
@@ -390,8 +384,8 @@
             }
             /* Info button on mobile */
             .info-button {
-                top: 15px;
-                right: 15px;
+                top: 12.5px;
+                right: 12.5px;
                 width: 35px;
                 height: 35px;
                 font-size: 24px; 
@@ -399,7 +393,7 @@
             }
             /* Leafletポップアップのスタイル調整 (変更箇所) */
             .leaflet-popup-content-wrapper {
-                border-radius: 8px;
+                border-radius: 15px;
                 padding: 2px;
                 font-size: 13px;
                 line-height: 1.1;
